@@ -1,0 +1,44 @@
+$base-color: red;
+$secondary-color: rgba(255, 0, 0, 0.1);
+@mixin central-flex($justify, $direction: "") {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+header {
+  //   height: 100vh;
+  //   padding: 40px 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  background: url("../../assets/flomoheader.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  button {
+    margin: 70px auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+  p {
+    background-color: rgba(255, 255, 255, 0.363);
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+  .heading {
+    font-weight: bold;
+  }
+}
+
+.features {
+  background-color: $secondary-color;
+  padding: 40px 10px;
+  .feature {
+    margin-bottom: 10px;
+  }
+}

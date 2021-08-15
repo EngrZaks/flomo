@@ -1,0 +1,40 @@
+$base-color: red;
+$secondary-color: rgb(253, 212, 212);
+@mixin central-flex($justify, $direction: "") {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background-color: $secondary-color;
+  ul {
+    list-style: none;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  .logo {
+    width: 30%;
+    max-width: 250px;
+    margin: 0 auto;
+    img {
+      width: 60%;
+    }
+  }
+  z-index: 1000;
+}
+.desktop-nav {
+  .logo {
+    margin: 0;
+  }
+  @include central-flex(space-between);
+  ul li {
+    display: inline-block;
+    padding: 15px;
+  }
+}
