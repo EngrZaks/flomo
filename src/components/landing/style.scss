@@ -1,21 +1,14 @@
-$base-color: red;
-$secondary-color: rgba(255, 0, 0, 0.1);
-@mixin central-flex($justify, $direction: "") {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: $direction;
-  justify-content: $justify;
-}
+@import "../common.scss";
 header {
   //   height: 100vh;
   //   padding: 40px 10px;
   text-align: center;
   font-size: 1.5rem;
-  background: url("../../assets/flomoheader.png");
+  //   background: url("../../assets/flomoheader.png");
+  background-image: url("https://images.unsplash.com/photo-1603400521630-9f2de124b33b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom left;
+  background-size: cover;
+  background-position: left;
   button {
     margin: 70px auto;
     font-size: 1.2rem;
@@ -23,12 +16,13 @@ header {
     font-variant: small-caps;
   }
   p {
-    background-color: rgba(255, 255, 255, 0.363);
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 10px;
     border-radius: 10px;
     display: block;
     width: fit-content;
     margin: auto;
+    font-size: 1.5rem;
   }
   .heading {
     font-weight: bold;
@@ -40,5 +34,34 @@ header {
   padding: 40px 10px;
   .feature {
     margin-bottom: 10px;
+  }
+}
+.offering {
+  text-align: center;
+  padding: 30px 0;
+  p {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  button {
+    margin-top: 30px;
+  }
+  .slide {
+    background-color: rgba(255, 0, 0, 0) !important;
+    h1 {
+      font-weight: 100;
+      background-color: rgba(255, 0, 0, 0.048);
+      margin: auto;
+      width: fit-content;
+    }
+  }
+  h1 {
+    font-weight: bold;
+    // color: red;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url("https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
   }
 }

@@ -1,9 +1,8 @@
 import React from "react";
 import "./slide.scss";
-const text = ["Tips", "Personalised Experience", "Delivery Portal"];
 const delay = 2500;
 
-function Slideshow() {
+function Slideshow({ text }) {
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
 

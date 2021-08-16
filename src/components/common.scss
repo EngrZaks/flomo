@@ -1,0 +1,12 @@
+$base-color: red;
+$secondary-color: rgba(255, 0, 0, 0.1);
+@mixin central-flex($justify, $direction: "") {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+p {
+  font-size: 1rem;
+}

@@ -1,0 +1,95 @@
+@import "../../common.scss";
+.FashionFoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .heading {
+    color: red;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .imgnlist {
+    // display: flex;
+    flex-direction: row;
+    align-items: center;
+    .image {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: -60px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  position: relative;
+  background: $secondary-color;
+  overflow: hidden;
+  //   height: 385px;
+}
+
+.list-wrapper {
+  margin: 40px auto;
+  max-width: 350px;
+  width: 90%;
+  cursor: url("http://gtms02.alicdn.com/tps/i2/T1_PMSFLBaXXcu5FDa-20-20.png") 10
+      10,
+    pointer !important;
+  position: relative;
+  //   height: 305px;
+}
+.list-wrapper > div {
+  overflow: hidden;
+}
+
+.list-wrapper-list {
+  background: #fff;
+  border-radius: 6px;
+  margin: 5px auto;
+  padding: 10px;
+  height: 70px;
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.list-wrapper-list:hover {
+  box-shadow: 0 8px 20px #e6e6e6;
+  transform: scale(1.1) !important;
+}
+
+.list-wrapper-icon {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  vertical-align: top;
+}
+.list-wrapper-text {
+  width: 80%;
+  display: inline-block;
+}
+
+.list-wrapper-text h1 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 320px) {
+  .list-wrapper-text h1 {
+    font-size: 14px;
+    line-height: 28px;
+    color: rebeccapurple;
+  }
+  .imgnlist {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .imgnlist {
+    display: flex;
+    .image {
+      width: 40% !important;
+      margin-bottom: 0% !important;
+    }
+  }
+}
