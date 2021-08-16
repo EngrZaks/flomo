@@ -1,7 +1,4 @@
 import React from "react";
-import { List } from "antd";
-import Icon from "antd/lib/icon";
-import PropTypes from "prop-types";
 import "./fashionfootStyle.scss";
 import image from "../../../assets/flomomobile.png";
 import { CheckCircleOutlined } from "@ant-design/icons";

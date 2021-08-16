@@ -12,7 +12,11 @@ export default function Features() {
   const Feature = ({ icon, heading, text }) => {
     return (
       <Col className="feature" xs={24} sm={12} lg={8}>
-        <Card hoverable actions={[<Button style={{}}> Know More </Button>]}>
+        <Card
+          headStyle={{ color: "red" }}
+          hoverable
+          actions={[<Button style={{}}> Know More </Button>]}
+        >
           <Meta avatar={icon} title={heading} description={text} />
         </Card>
       </Col>
