@@ -11,6 +11,7 @@ import FashionFoot from "./fashionFoot/fashionFoot";
 import "./headerSlide/slide.scss";
 import Offering from "./offering/offering";
 import { openNotification } from "../helpers";
+import Network from "./network/network";
 openNotification();
 const Landing = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
@@ -31,6 +32,7 @@ const Landing = () => {
       <Features />
       <Offering />
       <FashionFoot />
+      <Network />
     </div>
   );
 };
