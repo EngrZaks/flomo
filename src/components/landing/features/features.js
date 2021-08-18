@@ -11,7 +11,7 @@ import React from "react";
 export default function Features() {
   const Feature = ({ icon, heading, text }) => {
     return (
-      <Col className="feature" xs={24} sm={12} lg={8}>
+      <Col className="feature" xs={24} sm={12} lg={6}>
         <Card
           headStyle={{ color: "red" }}
           hoverable

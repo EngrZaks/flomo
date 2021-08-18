@@ -7,7 +7,7 @@ export default function Network() {
     // const width = 600
     // const quality = 80
     return (
-      <Col className="feature" xs={24} sm={12} lg={8}>
+      <Col className="feature" xs={24} sm={12} lg={6}>
         <Card
           headStyle={{ color: "red" }}
           cover={cover}
@@ -35,7 +35,7 @@ export default function Network() {
             cover={
               <img
                 alt="influencer"
-                src="https://images.unsplash.com/photo-1584998316204-3b1e3b1895ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                src="https://images.unsplash.com/photo-1584998316204-3b1e3b1895ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               />
             }
           />
